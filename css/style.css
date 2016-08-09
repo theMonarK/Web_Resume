@@ -639,25 +639,6 @@ h2.title{
   background-image: url('../images/contact.png');
 }
 
-.contact-box{
-	margin-bottom: 40px;
-}
-.contact-box .form-group{
-	margin-bottom: 39px;
-}
-.contact-box label{
-	color: #fff;
-	margin-bottom: 20px;
-	font-size: 18px;
-}
-
-.contact-box .form-control{
-	height: auto;
-	border-radius: 0px;
-	background: #4b5456;
-	border: 0px;
-}
-
 .contact-form .btn-default{
 
 	background: #191f21;
@@ -671,9 +652,9 @@ h2.title{
   font-size: 14px;
   line-height: 1.42857143;
   color: #fff;
-  background-color: #fff;
+  background-color: #4b5456;
   background-image: none;
-  border: 1px solid #ccc;
+  border: 0px solid #ccc;
   border-radius: 0px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);

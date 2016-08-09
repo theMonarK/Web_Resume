@@ -264,7 +264,7 @@
 						</div>
 					</div>
 					<div class="skill-box wow fadeInDown" data-wow-delay=".6s">
-						<label> html / css</label>
+						<label> html / css / Bootstrap</label>
 						<div class="progress">
 							<div class="progress-bar" role="progress-bar" aria-valuemin="0" aria-valuenow="90" aria-valuemax="100" style="width: 90%;" >
 								90%
@@ -593,18 +593,41 @@
           <div class="contact">
             <h2>Get in contact</h2>
   					<div class="contact-form">
-  						<form class="contact-box">
-  							<input type="text" class="form-control" id="name" placeholder="Name*" value=""><br>
-  							<input type="text" class="form-control" id="email" placeholder="Email*" value=""><br>
-                <input type="text" class="form-control" id="subject" placeholder="Subject*" value=""><br>
-  							<textarea class="form-control" placeholder="Your Message*" rows="5"></textarea>
-  						</form>
 
-  						<div class="row">
-  							<div class="col-md-12">
-  								<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-  							</div>
-  						</div>
+              <!-- Start Contact Form -->
+              <form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
+                <div class="form-group">
+                  <div class="controls">
+                    <input type="text" id="name" class="form-control" placeholder="Name" required data-error="Please enter your name">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="controls">
+                    <input type="email" class="email form-control" id="email" placeholder="Email" required data-error="Please enter your email">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="controls">
+                    <input type="text" id="msg_subject" class="form-control" placeholder="Subject" required data-error="Please enter your message subject">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="controls">
+                    <textarea id="message" rows="7" placeholder="Message" class="form-control" required data-error="Write your message"></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+
+                <button type="submit" id="submit" class="btn btn-default"></i> Send Message</button>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                <div class="clearfix"></div>
+
+              </form>
+              <!-- End Contact Form -->
+
   					</div>
           </div>
 				</div>
@@ -645,6 +668,8 @@
     <!-- Sticky Menu -->
     <script src="js/jquery.sticky.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="assets/js/form-validator.min.js"></script>
+    <script type="text/javascript" src="assets/js/contact-form-script.js"></script>
     <!-- Google Map API Key Source -->
     <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
   	<script>
