@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <title>Anthony Guillier - Padawan Developer</title>
 
     <!-- Mobile Specific Metas
@@ -543,17 +543,34 @@
              I am passionate about music. <br>
              I started the guitar 11 years ago by myself, played with a band for few years as the lead guitarist.<br>
              I also learned keyboard by myself couple years ago.<br>
-             Now, I compose my own music inspired from Rock/Blues/Hip-Hop with Logic Pro X.
+             Now, I compose my own music inspired from Rock/Blues/Hip-Hop with Logic Pro X.<br>
+             As a genuine music addict I also collect Vinyl records.
            </div>
-           <div class="soundcloud-player wow fadeInUp" data-wow-delay=".8s">
-             <iframe width="50%" height="450" scrolling="no" frameborder="yes"
+           <div class="soundcloud-player wow fadeInUp col-md-6" data-wow-delay=".8s">
+             <iframe width="90%" height="450" scrolling="no" frameborder="yes"
            	src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/104043966&amp;
            	color=0080ff&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false">
            	</iframe>
           </div>
-         </div>
+          <div class="col-md-6 text-center wow fadeInUp">
+              <h1 class="vinyl-title">Vinyl Collection</h1>
+              <div id="vinyl-div" class="vinyl-table">
+                <ul id="vinyl-list" class="media-list">
+                </ul>
+              </div>
+            </div>
+        </div>
       </div>
     </div>
+	</section>
+
+  <section id="section-vinyl" class="section-padding">
+		<div class="container">
+			<div class="row">
+
+				</div>
+			</div>
+		</div>
 	</section>
 	<!-- section leisure end -->
 
@@ -686,7 +703,8 @@
 						<li><a href="https://github.com/theMonarK" target="_blank"><i class="fa fa-github"></i></a></li>
 						<li><a href="https://www.linkedin.com/in/anthonyguillier" target="_blank"><i class="fa fa-linkedin"></i></a></li>
             <li><a href="https://soundcloud.com/khaaaaaa" target="_blank"><i class="fa fa-soundcloud"></i></a></li>
-					</ul>
+            <li><a href="https://www.discogs.com/user/khaaaaaa/collection" target="_blank"><i class="glyphicon glyphicon-cd"></i></a></li>
+          </ul>
 				</div>
 			</div>
 		</div>
@@ -705,6 +723,8 @@
     <script src="js/jquery.singlePageNav.js"></script>
     <!-- Eeasing -->
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <!-- Discog API -->
+    <script src="js/discog.js"></script>
     <!-- Sticky Menu -->
     <script src="js/jquery.sticky.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>

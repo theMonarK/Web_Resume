@@ -520,6 +520,18 @@ h2.title{
 	background: #f2f2f1;
 }
 
+#vinyl-div{
+	overflow: auto;
+	height: 350px;
+}
+
+.vinyl-title{
+	color: #ffffff
+}
+.vinyl-content{
+	color: #f2f2f1;
+}
+
 .parallax-enib {
 
     /* Full height */
